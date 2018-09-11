@@ -1,0 +1,112 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spring-hibernate-crm-api-rest",
+		"_postman_id": "ed5b5308-3218-3040-e556-9291a66c150c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET getCustomers()",
+			"request": {
+				"url": "http://localhost:8080/spring-hibernate-crm-api-rest/api/customers",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9objp0ZXN0MTIz",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get all customers"
+			},
+			"response": []
+		},
+		{
+			"name": "GET getCustomer(int)",
+			"request": {
+				"url": "http://localhost:8080/spring-hibernate-crm-api-rest/api/customers/10",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9objpmdW4xMjM=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Gets the customer with the passed id"
+			},
+			"response": []
+		},
+		{
+			"name": "POST addCustomer(Customer)",
+			"request": {
+				"url": "http://localhost:8080/spring-hibernate-crm-api-rest/api/customers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9objpmdW4xMjM=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Javier\",\n    \"lastName\": \"Pérez\",\n    \"email\": \"jperez@gallelloit.com\"\n}"
+				},
+				"description": "Adds the customer passed in the Customer object"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT updateCustomer(Customer)",
+			"request": {
+				"url": "http://localhost:8080/spring-hibernate-crm-api-rest/api/customers",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9objpmdW4xMjM=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 10,\n    \"firstName\": \"Javiera\",\n    \"lastName\": \"Pérez\",\n    \"email\": \"jperez@gallelloit.com\"\n}"
+				},
+				"description": "Updates the customer passed in the Customer object"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE deleteCustomer(int)",
+			"request": {
+				"url": "http://localhost:8080/spring-hibernate-crm-api-rest/api/customers/9",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9objpmdW4xMjM=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Delete the customer of the argument"
+			},
+			"response": []
+		}
+	]
+}
