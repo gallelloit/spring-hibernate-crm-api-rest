@@ -71,5 +71,5 @@ To get this Maven project working:
   - Build using Maven
   - In your IDE, run the application on a Server (I use Tomcat 9.0)
   - Install Postman on your computer (a postman collection JSON export is stored in this location:
-    - [Postman Collection](https://github.com/pgbonino/spring-hibernate-crm-api-rest/blob/master/sql-scripts/spring-hibernate-crm-api-rest.postman_collection.json)
+    - [Postman Collection](https://github.com/pgbonino/spring-hibernate-crm-api-rest/blob/master/postman/spring-hibernate-crm-api-rest.postman_collection.json)
   - Play around
